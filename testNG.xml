@@ -1,0 +1,34 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "Days">
+    <test name = "WeekDays">
+        <classes>
+            <class name = "Day1" />
+            <class name="Day2"/>
+            <class name="Day3"/>
+            <class name="Day4"/>
+            <class name="Day5">
+                <methods>
+                 <include name="firstHalf"> </include>
+                </methods>
+            </class>
+
+        </classes>
+
+
+    </test>
+    <test name="WeekEnds">
+        <classes>
+            <class name="Day6"></class>
+            <class name="Day7"></class>
+        </classes>
+</test>
+
+<test name="extra days">
+    <classes>
+        <class name="Day8"></class>
+        <class name="Day9"></class>
+    </classes>
+</test>
+</suite>

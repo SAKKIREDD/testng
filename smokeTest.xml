@@ -1,0 +1,40 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "Days">
+<listeners>
+    <listener class-name="Listeners1"></listener>
+</listeners>
+    <test name = "WeekDays">
+        <parameter name="URL" value="www.toyota.com"></parameter>
+        <parameter name="Key" value="83738373"></parameter>
+        <groups>
+            <run>
+                <include name="smoke1"/>
+            </run>
+        </groups>
+        <classes>
+            <class name = "Day1" />
+            <class name="Day2"/>
+            <class name="Day3"/>
+            <class name="Day4"/>
+           
+            <class name="Day5"/>
+                <class name="Day6"></class>
+            <class name="Listeners"></class>
+<!--                <methods>-->
+<!--                 <include name="firstHalf"> </include>-->
+<!--                </methods>-->
+            
+
+        </classes>
+
+
+    </test>
+<!--    <test name="Weekends">-->
+<!--        <classes>-->
+<!--&lt;!&ndash;            <class name="Day6"></class>&ndash;&gt;-->
+<!--            <class name="Day7"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>
